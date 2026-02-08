@@ -1,0 +1,81 @@
+# .github/workflows/content-update.yml
+name: Enablement Content Update
+
+on:
+  push:
+    paths:
+      - 'source-docs/**'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  analyze-and-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Need previous commit to detect changes
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+      
+      - name: Detect changed files
+        id: changed-files
+        run: |
+          # Get list of changed files in source-docs/
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- source-docs/ | tr '\n' ' ')
+          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+          echo "Changed files: $CHANGED"
+      
+      - name: Run impact analysis
+        if: steps.changed-files.outputs.changed != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python scripts/analyze_impact.py \
+            --changed-files ${{ steps.changed-files.outputs.changed }} \
+            --output impact-analysis.json
+      
+      - name: Generate updated enablement modules
+        if: steps.changed-files.outputs.changed != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python scripts/generate_enablement.py --impact-file impact-analysis.json
+      
+      - name: Create Pull Request
+        if: steps.changed-files.outputs.changed != ''
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Update enablement modules based on doc changes'
+          title: 'Automated: Enablement Module Updates'
+          body: |
+            ## Automated Enablement Update
+            
+            This PR contains enablement module updates based on recent changes to source documentation.
+            
+            ### Impact Analysis
+            See `impact-analysis.json` for details on which modules were affected and why.
+            
+            ### Review Checklist
+            - [ ] Review accuracy of technical content
+            - [ ] Verify learning objectives are clear
+            - [ ] Check for appropriate examples
+            - [ ] Confirm formatting is correct
+          branch: enablement-updates
+          delete-branch: true
+      
+      - name: Upload impact analysis
+        if: steps.changed-files.outputs.changed != ''
+        uses: actions/upload-artifact@v3
+        with:
+          name: impact-analysis
+          path: impact-analysis.json
