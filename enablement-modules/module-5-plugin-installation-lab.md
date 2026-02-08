@@ -123,6 +123,7 @@ You've successfully created and tested a plugin with these key components:
 * **Commands directory** (`commands/`): contains your custom skills
 * **Skill arguments** (`$ARGUMENTS`): captures user input for dynamic behavior
 
+
 <Tip>
   The `--plugin-dir` flag is useful for development and testing. When you're ready to share your plugin with others, see [Create and distribute a plugin marketplace](/en/plugin-marketplaces).
 </Tip>

@@ -32,6 +32,7 @@ Claude Code supports two ways to add custom skills, agents, and hooks:
 * You're distributing through a marketplace
 * You're okay with namespaced skills like `/my-plugin:hello` (namespacing prevents conflicts between plugins)
 
+
 <Tip>
   Start with standalone configuration in `.claude/` for quick iteration, then [convert to a plugin](#convert-existing-configurations-to-plugins) when you're ready to share.
 </Tip>
