@@ -1,6 +1,8 @@
-Module Title: Lab: Creating a Plugin with a Custom Skill
+> v1 | **Last updated: 2/8/2026**
 
-Description: Create the plugin directory, create the plugin manifest, add a skill, test the plugin, and add skill arguments.
+> Module Title: Lab: Creating a Plugin with a Custom Skill
+
+> Description: Create the plugin directory, create the plugin manifest, add a skill, test the plugin, and add skill arguments.
 
 # Introduction
 

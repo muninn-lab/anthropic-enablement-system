@@ -1,6 +1,8 @@
-Module Title: Lab: Adding the Demo Marketplace
+> v1 | **Last updated: 2/8/2026**
 
-Description: Add the demo marketplace and browse the plugins.
+> Module Title: Lab: Adding the Demo Marketplace
+
+> Description: Add the demo marketplace and browse the plugins.
 
 # Introduction
 

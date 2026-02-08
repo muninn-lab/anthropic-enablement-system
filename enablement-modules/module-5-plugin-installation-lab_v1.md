@@ -1,6 +1,8 @@
-Module Title: PLab: Adding a Demo Plugin
+> v1 | **Last updated: 2/8/2026**
 
-Description: Install a plugin from the demo marketplace.
+> Module Title: PLab: Adding a Demo Plugin
+
+> Description: Install a plugin from the demo marketplace.
 
 # Introduction
 

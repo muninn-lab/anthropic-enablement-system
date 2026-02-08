@@ -1,10 +1,10 @@
-Module Title: What Plugins Are and How They Work
+> v1 | **Last updated: 2/8/2026**
 
-Description: Cover the basics of Claude Code plugins; what they enable, core concepts, how they extend functionality, and examples of common use cases.
+> Module Title: What Plugins Are and How They Work
+
+> Description: Cover the basics of Claude Code plugins; what they enable, core concepts, how they extend functionality, and examples of common use cases.
 
 # Plugins
-
-> Create custom plugins to extend Claude Code with skills, agents, hooks, and MCP servers.
 
 Plugins let you extend Claude Code with custom functionality that can be shared across projects and teams. This guide covers creating your own plugins with skills, agents, hooks, and MCP servers.
 

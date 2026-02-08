@@ -1,6 +1,8 @@
-Module Title: Creating Plugins
+> v1 | **Last updated: 2/8/2026**
 
-Description: Cover the plugin system, structure, organization patterns, testing plugins, debugging plugins, troubleshooting common issues, and best practices for plugin development. Include a plugin creation walkthrough as demo.
+> Module Title: Creating Plugins
+
+> Description: Cover the plugin system, structure, organization patterns, testing plugins, debugging plugins, troubleshooting common issues, and best practices for plugin development. Include a plugin creation walkthrough as demo.
 
 # Plugin Structure
 

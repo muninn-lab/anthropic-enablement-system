@@ -1,6 +1,8 @@
-Module Title: Lab: Converting Hooks to Plugins
+> v1 | **Last updated: 2/8/2026**
 
-Description: Create the plugin structure, copy existing files, migrate hooks, and test the plugin.
+> Module Title: Lab: Converting Hooks to Plugins
+
+> Description: Create the plugin structure, copy existing files, migrate hooks, and test the plugin.
 
 # Introduction
 

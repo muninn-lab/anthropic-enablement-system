@@ -1,10 +1,10 @@
-Module Title: Plugin Marketplaces and Discovery
+> v1 | **Last updated: 2/8/2026**
 
-Description: How to find plugins; navigate and manage marketplaces, evaluate plugin quality and security, and decide which plugins to install. Include a marketplace navigation walkthrough as demo.
+> Module Title: Plugin Marketplaces and Discovery
+
+> Description: How to find plugins; navigate and manage marketplaces, evaluate plugin quality and security, and decide which plugins to install. Include a marketplace navigation walkthrough as demo.
 
 # Create and distribute a plugin marketplace
-
-> Build and host plugin marketplaces to distribute Claude Code extensions across teams and communities.
 
 A plugin marketplace is a catalog that lets you distribute plugins to others. Marketplaces provide centralized discovery, version tracking, automatic updates, and support for multiple source types (git repositories, local paths, and more). This guide shows you how to create your own marketplace to share plugins with your team or community.
 
@@ -340,7 +340,7 @@ export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
   For CI/CD environments, configure the token as a secret environment variable. GitHub Actions automatically provides `GITHUB_TOKEN` for repositories in the same organization.
 </Note>
 
-### Test locally before distribution
+## Test locally before distribution
 
 Test your marketplace locally before sharing:
 
@@ -349,7 +349,7 @@ Test your marketplace locally before sharing:
 /plugin install test-plugin@my-local-marketplace
 ```
 
-### Require marketplaces for your team
+## Require marketplaces for your team
 
 You can configure your repository so team members are automatically prompted to install your marketplace when they trust the project folder. Add your marketplace to `.claude/settings.json`:
 
@@ -377,7 +377,7 @@ You can also specify which plugins should be enabled by default:
 }
 ```
 
-### Managed marketplace restrictions
+## Managed marketplace restrictions
 
 For organizations requiring strict control over plugin sources, administrators can restrict which plugin marketplaces users are allowed to add using the `strictKnownMarketplaces` setting in managed settings.
 
@@ -389,7 +389,7 @@ When `strictKnownMarketplaces` is configured in managed settings, the restrictio
 | Empty array `[]`    | Complete lockdown. Users cannot add any new marketplaces         |
 | List of sources     | Users can only add marketplaces that match the allowlist exactly |
 
-#### Common configurations
+### Common configurations
 
 Disable all marketplace additions:
 
@@ -434,7 +434,7 @@ Allow all marketplaces from an internal git server using regex pattern matching:
 }
 ```
 
-#### How restrictions work
+## How restrictions work
 
 Restrictions are validated early in the plugin installation process, before any network requests or filesystem operations occur. This prevents unauthorized marketplace access attempts.
 

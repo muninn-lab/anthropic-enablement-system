@@ -1,6 +1,8 @@
-Module Title: Converting Configurations to Plugins
+> v1 | **Last updated: 2/8/2026**
 
-Description: Cover the step-by-step migration process, troubleshooting common issues, and best practices for plugin conversions. Include a plugin conversion walkthrough as demo.
+> Module Title: Converting Configurations to Plugins
+
+> Description: Cover the step-by-step migration process, troubleshooting common issues, and best practices for plugin conversions. Include a plugin conversion walkthrough as demo.
 
 
 # Convert existing configurations to plugins

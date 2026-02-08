@@ -1,6 +1,8 @@
-Module Title: Installing and Managing Plugins
+> v1 | **Last updated: 2/8/2026**
 
-Description: Cover the step-by-step installation process, managing installed plugins, troubleshooting common issues, and best practices for plugin management. Include a plugin installation walkthrough as demo.
+> Module Title: Installing and Managing Plugins
+
+> Description: Cover the step-by-step installation process, managing installed plugins, troubleshooting common issues, and best practices for plugin management. Include a plugin installation walkthrough as demo.
 
 # Install plugins
 
