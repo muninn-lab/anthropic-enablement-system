@@ -3,47 +3,128 @@
     {
       "filename": "module-1-plugin-basics.md",
       "title": "What Plugins Are and How They Work",
-      "description": "Cover the basics of Claude Code plugins; what they enable, core concepts, how they extend functionality, and examples of common use cases."
+      "description": "Cover the basics of Claude Code plugins; what they enable, core concepts, how they extend functionality, and examples of common use cases.",
+      "tags": [
+        "fundamentals",
+        "architecture",
+        "all-customers",
+        "getting-started",
+        "concepts"
+      ],
+      "estimated_delivery_minutes": 45,
+      "estimated_word_count": 450
     },
     {
       "filename": "module-2-plugin-marketplaces.md",
       "title": "Plugin Marketplaces and Discovery",
-      "description": "How to find plugins; navigate and manage marketplaces, evaluate plugin quality and security, and decide which plugins to install. Include a marketplace navigation walkthrough as demo."
+      "description": "How to find plugins; navigate and manage marketplaces, evaluate plugin quality and security, and decide which plugins to install. Include a marketplace navigation walkthrough as demo.",
+      "tags": [
+        "discovery",
+        "security",
+        "all-customers",
+        "marketplaces",
+        "evaluation"
+      ],
+      "estimated_delivery_minutes": 30,
+      "estimated_word_count": 350
     },
     {
       "filename": "module-3-plugin-marketplaces-lab.md",
       "title": "Lab: Adding the Demo Marketplace",
-      "description": "Add the demo marketplace and browse the plugins."
+      "description": "Add the demo marketplace and browse the plugins.",
+      "tags": [
+        "hands-on",
+        "all-customers",
+        "lab-exercise",
+        "discovery"
+      ],
+      "estimated_delivery_minutes": 20,
+      "estimated_word_count": 150
     },
     {
       "filename": "module-4-plugin-installation.md",
       "title": "Installing and Managing Plugins",
-      "description": "Cover the step-by-step installation process, managing installed plugins, troubleshooting common issues, and best practices for plugin management. Include a plugin installation walkthrough as demo."
+      "description": "Cover the step-by-step installation process, managing installed plugins, troubleshooting common issues, and best practices for plugin management. Include a plugin installation walkthrough as demo.",
+      "tags": [
+        "installation",
+        "configuration",
+        "all-customers",
+        "scopes",
+        "management"
+      ],
+      "estimated_delivery_minutes": 45,
+      "estimated_word_count": 500
     },
     {
       "filename": "module-5-plugin-installation-lab.md",
       "title": "Lab: Adding a Demo Plugin",
-      "description": "Install a plugin from the demo marketplace."
+      "description": "Install a plugin from the demo marketplace.",
+      "tags": [
+        "hands-on",
+        "all-customers",
+        "lab-exercise",
+        "installation"
+      ],
+      "estimated_delivery_minutes": 20,
+      "estimated_word_count": 150
     },
-     {
+    {
       "filename": "module-6-plugin-creation.md",
       "title": "Creating Plugins",
-      "description": "Cover the plugin system, structure, organization patterns, testing plugins, debugging plugins, troubleshooting common issues, and best practices for plugin development. Include a plugin creation walkthrough as demo."
+      "description": "Cover the plugin system, structure, organization patterns, testing plugins, debugging plugins, troubleshooting common issues, and best practices for plugin development. Include a plugin creation walkthrough as demo.",
+      "tags": [
+        "development",
+        "plugin-authoring",
+        "partners",
+        "technical",
+        "advanced"
+      ],
+      "estimated_delivery_minutes": 60,
+      "estimated_word_count": 650
     },
     {
       "filename": "module-7-plugin-creation-lab.md",
       "title": "Lab: Creating a Plugin with a Custom Skill",
-      "description": "Create the plugin directory, create the plugin manifest, add a skill, test the plugin, and add skill arguments."
+      "description": "Create the plugin directory, create the plugin manifest, add a skill, test the plugin, and add skill arguments.",
+      "tags": [
+        "hands-on",
+        "plugin-authoring",
+        "partners",
+        "lab-exercise",
+        "development"
+      ],
+      "estimated_delivery_minutes": 30,
+      "estimated_word_count": 250
     },
     {
       "filename": "module-8-plugin-conversion.md",
       "title": "Converting Configurations to Plugins",
-      "description": "Cover the step-by-step migration process, troubleshooting common issues, and best practices for plugin conversions. Include a plugin conversion walkthrough as demo."
+      "description": "Cover the step-by-step migration process, troubleshooting common issues, and best practices for plugin conversions. Include a plugin conversion walkthrough as demo.",
+      "tags": [
+        "migration",
+        "optimization",
+        "partners",
+        "workflow",
+        "advanced"
+      ],
+      "estimated_delivery_minutes": 30,
+      "estimated_word_count": 350
     },
     {
       "filename": "module-9-plugin-conversion-lab.md",
       "title": "Lab: Converting Hooks to Plugins",
-      "description": "Create the plugin structure, copy existing files, migrate hooks, and test the plugin."
+      "description": "Create the plugin structure, copy existing files, migrate hooks, and test the plugin.",
+      "tags": [
+        "hands-on",
+        "migration",
+        "partners",
+        "lab-exercise",
+        "optimization"
+      ],
+      "estimated_delivery_minutes": 30,
+      "estimated_word_count": 250
     }
-  ]
+  ],
+  "total_course_duration_minutes": 310,
+  "total_course_duration_formatted": "5h 10m"
 }
