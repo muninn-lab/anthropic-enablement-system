@@ -8,8 +8,9 @@ Automated technical enablement content maintenance using Claude AI.
 1. **Source of Truth**: Product docs, PRDs, runbooks, and other artifacts live in `source-docs/`
 2. **Change Detection**: GitHub Actions monitors changes to source docs
 3. **Impact Analysis**: Claude analyzes which enablement modules need updates
-4. **Batch Generation**: Updated modules are generated via Claude's Batch API
+4. **Batch Generation**: Updated modules are generated via Claude's Batch API `enablement-materials/`
 5. **Human Review**: Changes are submitted as PRs for SME validation
+6. **Ready to Teachs**: Training ready content made available `trainer-resources/`
 
 ## Setup
 
