@@ -18,6 +18,7 @@ Automated technical enablement content maintenance using Claude AI.
 3. Add your API key as a GitHub secret: `ANTHROPIC_API_KEY`
 4. Add source documentation to `source-docs/`
 5. Initial enablement modules go in `enablement-modules/`
+6. Final educator materials go in `trainer-resources/`
 
 ## Local Testing
 ```bash
